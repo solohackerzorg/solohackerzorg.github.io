@@ -48,6 +48,58 @@
 <!-- Preloader End --> 
 
 
+<style>
+  .social-links {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 20px 0; /* Adjust margin to move the container down */
+  padding: 20px; /* Increase padding for better spacing */
+  background-color: #f0f0f0; /* Add background color for style */
+  border-radius: 20px; /* Increase border radius for rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Increase box shadow for depth */
+}
+
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Adjust the gap between icons */
+}
+
+.social-links li {
+  display: inline-block;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #000; /* Customize the color as needed */
+  font-size: 36px; /* Adjust this value to make the icons bigger */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: #0073b1; /* Change color on hover */
+}
+
+/* Clip animation */
+.clip-animation {
+  animation: clipAnimation 1s forwards;
+}
+
+@keyframes clipAnimation {
+  0% {
+    clip-path: inset(50%);
+  }
+  100% {
+    clip-path: inset(0%);
+  }
+}
+
+</style>
+
+
+
 
   <div class="page-cover">
   <div id="page-scroll">
@@ -68,6 +120,7 @@
         </header>
 -->
       <section class="hero">
+
         <div class="row">
           <div class="col-xl-3 col-lg-4 col-md-6 profile-pic">
             <div class="image clip-animation from-left" style="background-image: url(images/profile.jpeg); margin-right: 80px;">
@@ -75,9 +128,11 @@
             </div>
             <div class="social-links clip-animation">
               <ul>
-                <li><a href="https://www.facebook.com/ranahaseemtop33fan" target="_blank">Facebook</a></li>
-                <li><a href="https://github.com/solohackerzorg" target="_blank">GitHub</a></li>
-              </ul>
+  <li><a href="https://www.facebook.com/profile.php?id=100005080187238" target="_blank"><i class="fab fa-facebook"></i></a></li>
+  <li><a href="https://github.com/solohackerzorg" target="_blank"><i class="fab fa-github"></i></a></li>
+  <li><a href="https://www.linkedin.com/in/realmuhammadnaseer/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+</ul>
+
             </div>
           </div>
           <div class="col-xl-9 col-lg-8 col-md-6 right-content">
@@ -96,7 +151,7 @@
         </div>
         <div class="spacer-30"></div>
         <p class="clip-animation" data-delay="1.1">
-          I'm a Creative Developer focused on crafting interactive apps, VR experiences, and creative websites. My days are spent coding exceptional projects and exploring new technologies to enhance my development toolkit. I transform captivating designs into dynamic realities through seamless transitions and animations that cater to my clients. I harness cutting-edge technologies to create fully interactive and responsive websites and apps that leave a lasting impact.</p>
+          With a curious mind and a passion for innovation, I've spent over 4 years honing my skills as a Grey Hat. I weave together Python, data mining, and software development to craft solutions that inspire. My expertise in C++, SQL, and HTML/CSS is matched only by my love for collaboration and my drive to make a meaningful impact. I believe in technology that touches hearts and changes lives.</p>
 
         <!-- download cv-->
          <!-- <div class="spacer-45"></div>
@@ -112,147 +167,174 @@
 
   <div class="row services">
     <div class="spacer-60"></div>
-    <!-- Web Sites and Platforms -->
+    <!-- Python Development -->
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
       <div class="service-item">
-        <i class="fas fa-globe"></i>
-        <h5>Web Sites and <br> Platforms </h5>
+        <i class="fas fa-python"></i>
+        <h5>Python <br> Development</h5>
       </div>
     </div>
-    <!-- Mobile Applications -->
+    <!-- Data Mining -->
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
       <div class="service-item">
-        <i class="fas fa-mobile"></i>
-        <h5>Mobile <br> Applications </h5>
+        <i class="fas fa-database"></i>
+        <h5>Data <br> Mining</h5>
       </div>
     </div>
-    <!-- Strategy and Branding -->
+    <!-- Software Development -->
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
       <div class="service-item">
-        <i class="fas fa-bullseye"></i>
-        <h5>Strategy <br> and Branding </h5>
+        <i class="fas fa-laptop-code"></i>
+        <h5>Software <br> Development</h5>
       </div>
     </div>
-    <!-- Articles and BlogPosts -->
+    <!-- C++ Programming -->
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
       <div class="service-item">
-        <i class="fas fa-newspaper"></i>
-        <h5>Articles <br> and BlogPosts </h5>
+        <i class="fas fa-code"></i>
+        <h5>C++ <br> Programming</h5>
       </div>
     </div>
-    <!-- SEO Optimization -->
+    <!-- SQL Databases -->
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
       <div class="service-item">
-        <i class="fas fa-chart-line"></i>
-        <h5>SEO <br> Optimization </h5>
+        <i class="fas fa-database"></i>
+        <h5>SQL <br> Databases</h5>
       </div>
     </div>
-    <!-- Social Media Management -->
+    <!-- HTML/CSS Development -->
     <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
       <div class="service-item">
-        <i class="fas fa-share-alt"></i>
-        <h5>Social Media <br> Management </h5>
+        <i class="fas fa-html5"></i>
+        <h5>HTML/CSS <br> Development</h5>
       </div>
     </div>
   </div>
 </section>
 
+
     
     <!-- testimonials -->
     <section class="testimonials scale-animation">
-      <div class="spacer-45"></div>
-      <h5 class="underline-title">What The People Saying</h5>
-      <div class="spacer-60"></div>
-      <!-- Swiper -->
-      <div class="swiper testimonial-carousel">
-        <div class="swiper-wrapper">
-          <!-- a comment -->
-          <div class="swiper-slide">
-            <div class="left">
-             <i class="fas fa-quote-left"></i>
-            </div>
-            <div class="right">
-              <p class="little-p">Electron's expertise as a researcher has truly impressed me. With each passing project, their ability to delve deep into subjects and extract valuable insights becomes more evident, greatly enhancing our content quality.</p>
-              <div class="comment-author">
-                <img class="author-image" src="images/comment-4.jpg" alt="">
-                <div class="author-info">
-                  <h4>Louis L. Marin</h4>
-                  <span>Manager</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- a comment -->
-          <div class="swiper-slide">
-            <div class="left">
-              <i class="fas fa-quote-left"></i>
-            </div>
-            <div class="right">
-              <p class="little-p">Electron's knack for crafting visually appealing websites has transformed our online presence. With every design element he creates, our brand's identity becomes more pronounced and engaging.</p>
-              <div class="comment-author">
-                <img class="author-image" src="images/comment6.jpg" alt="">
-                <div class="author-info">
-                  <h4>Amjad Afridi</h4>
-                  <span>Client</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- a comment -->
-          <div class="swiper-slide">
-            <div class="left">
-              <i class="fas fa-quote-left"></i>
-            </div>
-            <div class="right">
-              <p class="little-p">I'm genuinely impressed by Electron's ability to write blog posts that strike a chord with our audience. Their insightful and informative content not only educates but also resonates, fostering a strong connection with readers.</p>
-              <div class="comment-author">
-                <img class="author-image" src="images/comment7.jfif" alt="">
-                <div class="author-info">
-                  <h4>Roshini Nadar</h4>
-                  <span>Client</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- a comment -->
-          <div class="swiper-slide">
-            <div class="left">
-              <i class="fas fa-quote-left"></i>
-            </div>
-            <div class="right">
-              <p class="little-p">Collaborating with Electron has been a rewarding experience for our business. Their diverse skill set, encompassing web design, writing, research, and SEO, makes them a one-stop solution for all our digital needs.</p>
-              <div class="comment-author">
-                <img class="author-image" src="images/comment-4.jpg" alt="">
-                <div class="author-info">
-                  <h4>Mark Kevin</h4>
-                  <span>Co-Worker</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- a comment -->
-          <div class="swiper-slide">
-            <div class="left">
-              <i class="fas fa-quote-left"></i>
-            </div>
-            <div class="right">
-              <p class="little-p">As a writer, Electron has a remarkable ability to simplify complex topics, making them accessible to a broader audience. This skill has significantly expanded our readership and engagement across various platforms.</p>
-              <div class="comment-author">
-                <img class="author-image" src="images/comment-1.jpg" alt="">
-                <div class="author-info">
-                  <h4>Adam Wood</h4>
-                  <span>Co-Worker</span>
-                </div>
-              </div>
+  <div class="spacer-45"></div>
+  <h5 class="underline-title">What The People Are Saying</h5>
+  <div class="spacer-60"></div>
+  <!-- Swiper -->
+  <div class="swiper testimonial-carousel">
+    <div class="swiper-wrapper">
+      <!-- a comment -->
+      <div class="swiper-slide">
+        <div class="left">
+         <i class="fas fa-quote-left"></i>
+        </div>
+        <div class="right">
+          <p class="little-p">Electron's proficiency in Python has significantly enhanced our software development process. Their ability to write efficient and clean code has led to more robust and scalable applications.</p>
+          <div class="comment-author">
+            <img class="author-image" src="images/comment-4.jpg" alt="">
+            <div class="author-info">
+              <h4>Louis L. Marin</h4>
+              <span>Manager</span>
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
       </div>
-      <div class="spacer-60"></div>
-    </section>
+      <!-- a comment -->
+      <div class="swiper-slide">
+        <div class="left">
+          <i class="fas fa-quote-left"></i>
+        </div>
+        <div class="right">
+          <p class="little-p">Electron's expertise in data mining has provided us with valuable insights that drive our business strategies. Their ability to analyze and interpret complex data sets is truly remarkable.</p>
+          <div class="comment-author">
+            <img class="author-image" src="images/comment6.jpg" alt="">
+            <div class="author-info">
+              <h4>Amjad Afridi</h4>
+              <span>Client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- a comment -->
+      <div class="swiper-slide">
+        <div class="left">
+          <i class="fas fa-quote-left"></i>
+        </div>
+        <div class="right">
+          <p class="little-p">I'm genuinely impressed by Electron's ability to develop software solutions that meet our needs perfectly. Their diverse skills in programming languages and development tools are exceptional.</p>
+          <div class="comment-author">
+            <img class="author-image" src="images/comment7.jfif" alt="">
+            <div class="author-info">
+              <h4>Roshini Nadar</h4>
+              <span>Client</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- a comment -->
+      <div class="swiper-slide">
+        <div class="left">
+          <i class="fas fa-quote-left"></i>
+        </div>
+        <div class="right">
+          <p class="little-p">Collaborating with Electron has been a rewarding experience for our business. Their expertise in C++, SQL, and Python development makes them a one-stop solution for our software projects.</p>
+          <div class="comment-author">
+            <img class="author-image" src="images/comment-4.jpg" alt="">
+            <div class="author-info">
+              <h4>Mark Kevin</h4>
+              <span>Co-Worker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- a comment -->
+      <div class="swiper-slide">
+        <div class="left">
+          <i class="fas fa-quote-left"></i>
+        </div>
+        <div class="right">
+          <p class="little-p">Electron's skill in HTML/CSS development has significantly improved our website's user experience. Their attention to detail and design aesthetics are truly commendable.</p>
+          <div class="comment-author">
+            <img class="author-image" src="images/comment-1.jpg" alt="">
+            <div class="author-info">
+              <h4>Adam Wood</h4>
+              <span>Co-Worker</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="spacer-60"></div>
+</section>
+
 
     <!-- clients -->
+        <title>Client Slider</title>
+<style>
+  .client-slider {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .client-slider ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .client-slider li {
+    margin: 0 10px;
+  }
+
+  .client-slider img {
+    width: 150px; /* Set your desired width */
+    height: 150px; /* Set your desired height */
+    object-fit: cover; /* Ensures the image is cropped to fit */
+    filter: grayscale(100%); /* Converts image to black and white */
+  }
+</style>
     <div class="client-slider">
       <ul class="bxslider">
         <li><img src="images/clients/client-1d.png" alt="" /></li>
@@ -260,7 +342,6 @@
         <li><img src="images/clients/client-3d.png" alt="" /></li>
         <li><img src="images/clients/client-4d.png" alt="" /></li>
         <li><img src="images/clients/client-5d.png" alt="" /></li>
-        <li><img src="images/clients/client-6d.png" alt="" /></li>
         <li><img src="images/clients/client-7d.png" alt="" /></li>
       </ul>
     </div>
@@ -274,9 +355,11 @@
                 <p>Copyright 2023 - All right reserved</p>
               </div>
               <ul class="social">
-                <li><a target="_blank" href="https://www.facebook.com/ranahaseemtop33fan">Facebook</a></li>
-                <li><a target="_blank" href="https://github.com/solohackerzorg">Github</a></li>
-              </ul>
+  <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100005080187238"><i class="fab fa-facebook"></i></a></li>
+  <li><a target="_blank" href="https://github.com/solohackerzorg"><i class="fab fa-github"></i></a></li>
+  <li><a target="_blank" href="https://www.linkedin.com/in/realmuhammadnaseer/"><i class="fab fa-linkedin"></i></a></li>
+</ul>
+
             </div>
           </div>
         </footer>
