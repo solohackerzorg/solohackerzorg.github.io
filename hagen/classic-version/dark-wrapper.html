@@ -317,43 +317,109 @@ My goal is to create technology that changes lives and touches hearts. I strive 
 
 
     <!-- clients -->
-        <title>Client Slider</title>
-<style>
-  .client-slider {
-    max-width: 100%;
-    overflow: hidden;
-  }
+            <head>
+      <title>Stylish Name Slider</title>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Lobster&family=Pacifico&display=swap">
+      <style>
+        body {
+          font-family: 'Poppins', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #000;
+        }
 
-  .client-slider ul {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+        .slider-container {
+          max-width: 100%;
+          overflow: hidden;
+          position: relative;
+          padding: 40px 0;
+          background-color: #000;
+        }
 
-  .client-slider li {
-    margin: 0 10px;
-  }
+        .slider {
+          display: flex;
+          animation: slide 30s infinite linear;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+        }
 
-  .client-slider img {
-    width: 150px; /* Set your desired width */
-    height: 150px; /* Set your desired height */
-    object-fit: cover; /* Ensures the image is cropped to fit */
-    filter: grayscale(100%); /* Converts image to black and white */
-  }
-</style>
-    <div class="client-slider">
-      <ul class="bxslider">
-        <li><img src="images/clients/client-1d.png" alt="" /></li>
-        <li><img src="images/clients/client-2d.png" alt="" /></li>
-        <li><img src="images/clients/client-3d.png" alt="" /></li>
-        <li><img src="images/clients/client-4d.png" alt="" /></li>
-        <li><img src="images/clients/client-5d.png" alt="" /></li>
-        <li><img src="images/clients/client-7d.png" alt="" /></li>
-      </ul>
-    </div>
-    </div> <!-- page wrapper end -->
-    </div><!-- container -->
+        .slider-item {
+          flex: 0 0 auto;
+          margin: 0 20px;
+          text-align: center;
+        }
+
+        .slider-item .name-banner {
+          font-family: 'Pacifico', cursive;
+          font-size: 36px;
+          color: #fff;
+          display: inline-block;
+          transition: transform 0.3s;
+        }
+
+        .slider-item:hover .name-banner {
+          transform: scale(1.1);
+        }
+
+        @keyframes slide {
+          0% {
+            transform: translateX(0);
+          }
+
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+
+        @media (max-width: 768px) {
+          .slider {
+            animation: slide 40s infinite linear;
+          }
+
+          .slider-item .name-banner {
+            font-size: 24px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .slider {
+            animation: slide 50s infinite linear;
+          }
+
+          .slider-item .name-banner {
+            font-size: 18px;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <div class="slider-container">
+        <ul class="slider">
+          <li class="slider-item">
+            <div class="name-banner">Louis L. Marin</div>
+          </li>
+          <li class="slider-item">
+            <div class="name-banner">Amjad Afridi</div>
+          </li>
+          <li class="slider-item">
+            <div class="name-banner">Roshini Nadar</div>
+          </li>
+          <li class="slider-item">
+            <div class="name-banner">Mark Kevin</div>
+          </li>
+          <li class="slider-item">
+            <div class="name-banner">Adam Wood</div>
+          </li>
+          <li class="slider-item">
+            <div class="name-banner">Ghulam Dastagir</div>
+          </li>
+        </ul>
+      </div>
+    </body>
+  </div>
+  <!-- page wrapper end -->
+</div><!-- container -->
         <!-- FOOTER -->
         <footer>
           <div class="container">
